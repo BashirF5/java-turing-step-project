@@ -1,4 +1,4 @@
-package az.edu.turing.StepProject.DAO;
+package az.edu.turing.stepproject.dao;
 
 public class BookingDAO {
 
