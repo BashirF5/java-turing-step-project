@@ -30,7 +30,7 @@ public class BookingInFile extends DaoBooking {
 
 
     @Override
-    public Optional<BookingEntity> getBookingById(String bookingId) {
+    public Optional<BookingEntity> getBookingById(Long bookingId) {
         return super.getBookingById(bookingId);
     }
 

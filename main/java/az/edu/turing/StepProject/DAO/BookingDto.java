@@ -3,11 +3,11 @@ package az.edu.turing.StepProject.DAO;
 import java.time.LocalDate;
 
 public class BookingDto {
-    private String passengerName;
-    private Long bookingId;
-    private Long flightId;
-    private Long NUM_TICKERS;
-    private LocalDate CreadationDate;
+    public String passengerName;
+    public Long bookingId;
+    public Long flightId;
+    public Long NUM_TICKERS;
+    public LocalDate CreadationDate;
 
     public BookingDto(String passengerName, Long bookingId, Long flightId, Long NUM_TICKERS, LocalDate creadationDate) {
         this.passengerName = passengerName;

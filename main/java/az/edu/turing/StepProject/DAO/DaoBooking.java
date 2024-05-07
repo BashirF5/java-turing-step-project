@@ -13,7 +13,7 @@ public abstract class DaoBooking implements BookingDAO<BookingEntity> {
     }
 
     @Override
-    public Optional<BookingEntity> getBookingById(String bookingId) {
+    public Optional<BookingEntity> getBookingById(Long bookingId) {
         return Optional.empty();
     }
 

@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface BookingDAO<T> {
     T saveBooking(T booking) throws IOException;
-    Optional<T> getBookingById(String bookingId);
+    Optional<T> getBookingById(Long bookingId);
     T getAllBookings();
     Optional<T>getBookingsByPassengerName(String name);
     Optional<T>cancelBooking(String bookingId);
