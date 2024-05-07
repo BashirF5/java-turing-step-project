@@ -1,12 +1,14 @@
 package az.edu.turing.StepProject.DAO;
 
 import az.edu.turing.StepProject.DAO.iml.BookingEntity;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
+import java.io.IOException;
 import java.util.Optional;
 
 public abstract class DaoBooking implements BookingDAO<BookingEntity> {
     @Override
-    public BookingEntity saveBooking(BookingEntity booking) {
+    public BookingEntity saveBooking(BookingEntity booking) throws IOException {
         return null;
     }
 
