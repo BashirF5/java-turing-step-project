@@ -9,6 +9,7 @@ import java.util.List;
 public interface FlightService {
 
     FlightResponseDto create (FlightResponseDto flightResponseDto);
+    List<FlightResponseDto> getAllFlights();
 
 }
 

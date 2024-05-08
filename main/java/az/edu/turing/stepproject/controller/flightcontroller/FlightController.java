@@ -4,6 +4,7 @@ import az.edu.turing.stepproject.dto.FlightResponseDto;
 import az.edu.turing.stepproject.service.flightservice.FlightService;
 
 import java.time.DayOfWeek;
+import java.util.List;
 
 public class FlightController {
     private final FlightService flightService;
@@ -19,8 +20,10 @@ public class FlightController {
         }
 
         return flightService.create(flightResponseDto);
+    }
 
 
-
+    public List<FlightResponseDto> getAllFlights(){
+        return  null;
     }
 }
