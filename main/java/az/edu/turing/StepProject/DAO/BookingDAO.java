@@ -1,18 +1,16 @@
 package az.edu.turing.StepProject.DAO;
 
-public class BookingDAO {
+import com.fasterxml.jackson.core.JsonProcessingException;
 
-    private int data;
+import java.io.IOException;
+import java.util.Optional;
 
-    public BookingDAO(int data) {
-        this.data = data;
+public interface BookingDAO<T> {
+    T saveBooking(T booking) throws IOException;
+    Optional<T> getBookingById(Long bookingId);
+    T getAllBookings();
+    Optional<T>getBookingsByPassengerName(String name);
+    Optional<T>cancelBooking(String bookingId);
+
+
     }
-
-    public int getData() {
-        return data;
-    }
-
-    public void setData(int data) {
-        this.data = data;
-    }
-}
