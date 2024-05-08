@@ -1,8 +1,11 @@
 package az.edu.turing.StepProject.DAO.iml;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class BookingEntity {
+public class BookingEntity implements Serializable {
+
+    private  static final Long serialUID=1L;
     private String passengerName;
     private Long bookingId;
     private Long flightId;
