@@ -1,10 +1,12 @@
 package az.edu.turing.StepProject.controller;
 
 import az.edu.turing.StepProject.DAO.BookingDto;
+import az.edu.turing.StepProject.DAO.iml.BookingEntity;
 import az.edu.turing.StepProject.Service.BookingService;
 import az.edu.turing.StepProject.exception.BookingException;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -40,5 +42,12 @@ public class BookingController {
         }
     }
 
+    public BookingDto createBooking(BookingDto bookingDto) throws IOException {
+        if (bookingDto.CreadationDate.isBefore(LocalDate.now())){
+            throw  new BookingException("Creating a book cannot be past!");
+        }
+        return bookingService.createBooking(bookingDto);
+
+    }
 
 }
