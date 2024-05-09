@@ -1,4 +1,4 @@
-package az.edu.turing.StepProject.DAO.iml;
+package az.edu.turing.StepProject.dao.iml;
 
 import java.io.Serializable;
 import java.time.LocalDate;

@@ -1,6 +1,6 @@
 package az.edu.turing.StepProject;
 
-public class StepProjectApp {
+public class BookingApp {
     public static void main(String[] args) {
 
     }

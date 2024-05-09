@@ -1,6 +1,6 @@
-package az.edu.turing.StepProject.DAO;
+package az.edu.turing.StepProject.dao;
 
-import az.edu.turing.StepProject.DAO.iml.BookingEntity;
+import az.edu.turing.StepProject.dao.iml.BookingEntity;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.io.IOException;
