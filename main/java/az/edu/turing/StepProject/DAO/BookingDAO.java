@@ -1,15 +1,19 @@
 package az.edu.turing.StepProject.DAO;
 
+import az.edu.turing.StepProject.DAO.iml.BookingEntity;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Optional;
 
 public interface BookingDAO<T> {
-    T saveBooking(T booking) throws IOException;
+    boolean saveBooking(Collection<T> t) throws IOException;
     Optional<T> getBookingById(Long bookingId);
     T getAllBookings();
     Optional<T>getBookingsByPassengerName(String name);
+    Optional<T> getBookingsById(Long bookId);
     Optional<T>cancelBooking(String bookingId);
 
 
