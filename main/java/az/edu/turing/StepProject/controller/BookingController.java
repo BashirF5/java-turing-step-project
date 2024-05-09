@@ -1,7 +1,7 @@
 package az.edu.turing.StepProject.controller;
 
-import az.edu.turing.StepProject.DAO.BookingDto;
-import az.edu.turing.StepProject.Service.BookingService;
+import az.edu.turing.StepProject.dao.BookingDto;
+import az.edu.turing.StepProject.service.BookingService;
 import az.edu.turing.StepProject.exception.BookingException;
 
 import java.io.IOException;
